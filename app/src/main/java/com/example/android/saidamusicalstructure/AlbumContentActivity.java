@@ -46,7 +46,6 @@ public class AlbumContentActivity extends AppCompatActivity {
         song = (TextView) findViewById(R.id.album_song3);
 
 
-
         //add onclick listener to play it
         song.setOnClickListener(new View.OnClickListener() {
             @Override

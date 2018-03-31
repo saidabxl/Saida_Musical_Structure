@@ -10,8 +10,6 @@ import android.widget.TextView;
  * Created by User on 31/03/2018.
  */
 
-
-
 public class AlbumsActivity extends AppCompatActivity {
 
     @Override
