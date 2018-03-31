@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SaidaMusicalStructure</string>
+    <string name="category_album">Albums</string>
+    <string name="category_song">All Songs</string>
+    <string name="playing">Now Playing</string>
+
+    <!-- Now playing Activity -->
+    <string name="now_playing">Now Playing</string>
+
+    <!-- all songs activity-->
+    <string name="song">Song</string>
+
+    <!-- Albums activity-->
+    <string name="album">Album</string>
+
+    <!-- textviews for label every activity -->
+    <string name="main">Choose between albums or all songs in the device.</string>
+    <string name="all_song">Songs in the device</string>
+    <string name="albums">Albums in the device</string>
+    <string name="content">All songs in the selected album</string>
+</resources>
