@@ -2,8 +2,13 @@
 <resources>
     <color name="colorPrimary">#424242</color>
     <color name="colorPrimaryDark">#424242</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="background">#C8E6C9</color>
-    <color name="button_background">#BCAAA4</color>
-    <color name="textColor">#FFFFFF</color>
+
+
+    <color name="category_samatar">#A7FFEB</color>
+    <color name="category_magool">#B2DFDB</color>
+    <color name="category_sahra">#B9F6CA</color>
+    <color name="category_song">#B3E5FC</color>
+
+    <color name="background_main">#C8E6C9</color>
+    <color name="color_text">#212121</color>
 </resources>

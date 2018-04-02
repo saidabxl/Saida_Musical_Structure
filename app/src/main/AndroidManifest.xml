@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.saidamusicalstructure">
 
     <application
         android:allowBackup="true"
         android:label="@string/app_name"
-
         android:icon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -16,17 +15,42 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MagoolSongs"
+            android:label="@string/category_magool"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".MusicActivity"
+            android:label="@string/category_song"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
 
         <activity
-            android:name=".SongsActivity"
-            android:label="@string/category_song" />
+            android:name=".SahraSongs"
+            android:label="@string/category_sahra"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
+
         <activity
-            android:name=".AlbumsActivity"
-            android:label="@string/category_album" />
-        <activity
-            android:name=".NowPlayActivity"
-            android:label="@string/playing" />
-        <activity android:name=".AlbumContentActivity" android:label="Songs"/>
+            android:name=".SamatarSongs"
+            android:label="@string/category_samatar"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
     </application>
 
 </manifest>

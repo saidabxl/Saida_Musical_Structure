@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,29 +13,42 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Find TextView for All Songs
-        TextView allSongs = (TextView) findViewById(R.id.all_songs);
-
-        //add click listener to all song text view
-        allSongs.setOnClickListener(new View.OnClickListener() {
+        ImageView samatarImageView = findViewById(R.id.samatar_image_view);
+        samatarImageView.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
-                Intent songsIntent = new Intent(MainActivity.this, SongsActivity.class);
-                startActivity(songsIntent);
+                Intent samatarIntent = new Intent(MainActivity.this, SamatarSongs.class);
+                startActivity(samatarIntent);
+            }
+        });
+        ImageView magoolImageView = findViewById(R.id.magool_image_view);
+        magoolImageView.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers category is clicked on.
+            @Override
+            public void onClick(View view) {
+                Intent magoolIntent = new Intent(MainActivity.this, MagoolSongs.class);
+                startActivity(magoolIntent);
             }
         });
 
-        //Find TextView for Albums
-        TextView albums = (TextView) findViewById(R.id.albums);
-
-        //add click listener to albums text view
-        albums.setOnClickListener(new View.OnClickListener() {
+        ImageView sahraImageView = findViewById(R.id.sahra_image_view);
+        sahraImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent albumsIntent = new Intent(MainActivity.this, AlbumsActivity.class);
-                startActivity(albumsIntent);
+                Intent sahraIntent = new Intent(MainActivity.this, SahraSongs.class);
+                startActivity(sahraIntent);
             }
         });
+        ImageView musicImageView = findViewById(R.id.hibo_image_view);
+        musicImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent musicIntent = new Intent(MainActivity.this, MusicActivity.class);
+                startActivity(musicIntent);
+            }
+        });
+
 
     }
 }

@@ -1,29 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/music"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.android.saidamusicalstructure.MainActivity">
+    android:background="@color/background_main">
 
-    <TextView
-        style="@style/label"
-        android:text="@string/main" />
 
-    <TextView
-        android:id="@+id/all_songs"
-        style="@style/textView"
-        android:text="@string/category_song" />
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.android.saidamusicalstructure.SamatarSongs">
 
-    <TextView
-        android:id="@+id/albums"
-        style="@style/textView"
-        android:text="@string/category_album" />
 
-</LinearLayout>
+        <FrameLayout
+            android:id="@+id/frame_layout_samatar"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/samatar_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/samatar" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_layout_magool"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/magool_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/magool" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_layout_sahra"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+
+            <ImageView
+                android:id="@+id/sahra_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/sahra" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_layout_hibo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/hibo_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/hibo" />
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
