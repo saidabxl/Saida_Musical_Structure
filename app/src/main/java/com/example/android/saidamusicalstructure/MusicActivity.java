@@ -45,16 +45,16 @@ public class MusicActivity extends AppCompatActivity {
         mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         final List<Entity> songList = new ArrayList<>();
-        songList.add(new Music(R.string.Somali_Song1, R.raw.number_1));
-        songList.add(new Music(R.string.Somali_Song2, R.raw.number_two));
-        songList.add(new Music(R.string.Somali_Song3, R.raw.number_three));
-        songList.add(new Music(R.string.Somali_Song4, R.raw.number_four));
-        songList.add(new Music(R.string.Somali_Song5, R.raw.number_five));
-        songList.add(new Music(R.string.Somali_Song6, R.raw.number_six));
-        songList.add(new Music(R.string.Somali_Song7, R.raw.number_seven));
-        songList.add(new Music(R.string.Somali_Song8, R.raw.number_eight));
-        songList.add(new Music(R.string.Somali_Song9, R.raw.number_nine));
-        songList.add(new Music(R.string.Somali_Song10, R.raw.number_ten));
+        songList.add(new Music("Hibo", "Song Name", R.raw.number_1));
+        songList.add(new Music("Hibo", "Song Name", R.raw.number_two));
+        songList.add(new Music("Hibo", "Song Name", R.raw.number_three));
+        songList.add(new Music("Hibo", "Song Name", R.raw.number_four));
+        songList.add(new Music("Hibo", "Song Name", R.raw.number_five));
+        songList.add(new Music("Hibo", "Song Name", R.raw.number_six));
+        songList.add(new Music("Hibo", "Song Name", R.raw.number_seven));
+        songList.add(new Music("Hibo", "Song Name", R.raw.number_eight));
+        songList.add(new Music("Hibo", "Song Name", R.raw.number_nine));
+        songList.add(new Music("Hibo", "Song Name", R.raw.number_ten));
 
 
         EntityAdapter adaptor = new EntityAdapter(this, songList, R.color.category_song);

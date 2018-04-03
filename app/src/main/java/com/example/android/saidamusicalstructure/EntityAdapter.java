@@ -36,8 +36,11 @@ public class EntityAdapter extends ArrayAdapter<Entity> {
             songCoverImageView.setVisibility(View.GONE);
         }
 
-        TextView nameSongTextView = listItemView.findViewById(R.id.song_name_text_view);
-        nameSongTextView.setText(currentEntity.getNameInstrument());
+        TextView nameSingerTextView = listItemView.findViewById(R.id.song_name_text_view);
+        nameSingerTextView.setText(currentEntity.getNameOfSinger());
+
+        TextView nameSongTextView = listItemView.findViewById(R.id.song_name_text_view2);
+        nameSongTextView.setText(currentEntity.getNameOfSong());
 
         View textContainer = listItemView.findViewById(R.id.song_name_text_view);
         int color = ContextCompat.getColor(getContext(), colorPage);

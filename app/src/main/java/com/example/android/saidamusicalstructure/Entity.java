@@ -1,24 +1,25 @@
 package com.example.android.saidamusicalstructure;
 
-/**
- * Created by User on 02/04/2018.
- */
 
 public abstract class Entity {
-    public int name;
+    public String nameOfSinger;
     private int mImageResourceId = NO_IMAGE_PROVIDED;
     public static final int NO_IMAGE_PROVIDED = -1;
 
+    public String nameOfSong;
+
     public int mSoundId;
 
-    public Entity(int name, int imageResourceId, int soundResource) {
-        this.name = name;
+    public Entity(String nameOfSinger, String nameOfSong, int imageResourceId, int soundResource) {
+        this.nameOfSinger = nameOfSinger;
+        this.nameOfSong = nameOfSong;
         this.mImageResourceId = imageResourceId;
         this.mSoundId = soundResource;
     }
 
-    public Entity(int name, int mSoundId) {
-        this.name = name;
+    public Entity(String nameOfSinger, String nameOfSong, int mSoundId) {
+        this.nameOfSinger = nameOfSinger;
+        this.nameOfSong = nameOfSong;
         this.mSoundId = mSoundId;
     }
 
@@ -26,8 +27,12 @@ public abstract class Entity {
         return mImageResourceId != NO_IMAGE_PROVIDED;
     }
 
-    public int getNameInstrument() {
-        return name;
+    public String getNameOfSinger() {
+        return nameOfSinger;
+    }
+
+    public String getNameOfSong() {
+        return nameOfSong;
     }
 
     public int getmImageResourceId() {

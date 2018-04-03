@@ -3,15 +3,29 @@
     <string name="category_samatar">Samatar</string>
     <string name="category_magool">Magool</string>
     <string name="category_sahra">Sahra</string>
+
+
     <string name="category_song">Songs</string>
-    <string name="Somali_Song1">Enjoy</string>
-    <string name="Somali_Song2">Enjoy</string>
-    <string name="Somali_Song3">Enjoy</string>
-    <string name="Somali_Song4">Enjoy</string>
-    <string name="Somali_Song5">Enjoy</string>
-    <string name="Somali_Song6">Enjoy</string>
-    <string name="Somali_Song7">Enjoy</string>
-    <string name="Somali_Song8">Enjoy</string>
-    <string name="Somali_Song9">Enjoy</string>
-    <string name="Somali_Song10">Enjoy</string>
+    <string name="Somali_Song1">Artist Name</string>
+    <string name="Somali_Song2">Artist Name</string>
+    <string name="Somali_Song3">Artist Name</string>
+    <string name="Somali_Song4">Artist Name</string>
+    <string name="Somali_Song5">Artist Name</string>
+    <string name="Somali_Song6">Artist Name</string>
+    <string name="Somali_Song7">Artist Name</string>
+    <string name="Somali_Song8">Artist Name</string>
+    <string name="Somali_Song9">Artist Name</string>
+    <string name="Somali_Song10">Artist Name</string>
+
+
+    <string name="Song1">Song Name</string>
+    <string name="Song2">Song Name</string>
+    <string name="Song3">Song Name</string>
+    <string name="Song4">Song Name</string>
+    <string name="Song5">Song Name</string>
+    <string name="Song6">Song Name</string>
+    <string name="Song7">Song Name</string>
+    <string name="Song8">Song Name</string>
+    <string name="Song9">Song Name</string>
+    <string name="Song10">Song Name</string>
 </resources>

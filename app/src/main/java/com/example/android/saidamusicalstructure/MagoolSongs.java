@@ -47,13 +47,13 @@ public class MagoolSongs extends AppCompatActivity {
         mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         final List<Entity> magoolList = new ArrayList<>();
-        magoolList.add(new Magool(R.string.Somali_Song1, R.drawable.magool, R.raw.number_1));
-        magoolList.add(new Magool(R.string.Somali_Song2, R.drawable.magool, R.raw.number_two));
-        magoolList.add(new Magool(R.string.Somali_Song3, R.drawable.magool, R.raw.number_three));
-        magoolList.add(new Magool(R.string.Somali_Song3, R.drawable.magool, R.raw.number_four));
-        magoolList.add(new Magool(R.string.Somali_Song4, R.drawable.magool, R.raw.number_five));
-        magoolList.add(new Magool(R.string.Somali_Song5, R.drawable.magool, R.raw.number_six));
-        magoolList.add(new Magool(R.string.Somali_Song6, R.drawable.magool, R.raw.number_seven));
+        magoolList.add(new Magool("Magool", "Song Name", R.drawable.magool, R.raw.number_1));
+        magoolList.add(new Magool("Magool", "Song Name", R.drawable.magool, R.raw.number_two));
+        magoolList.add(new Magool("Magool", "Song Name", R.drawable.magool, R.raw.number_three));
+        magoolList.add(new Magool("Magool", "Song Name", R.drawable.magool, R.raw.number_four));
+        magoolList.add(new Magool("Magool", "Song Name", R.drawable.magool, R.raw.number_five));
+        magoolList.add(new Magool("Magool", "Song Name", R.drawable.magool, R.raw.number_six));
+        magoolList.add(new Magool("Artist", "Song Name", R.drawable.magool, R.raw.number_seven));
 
         EntityAdapter adaptor = new EntityAdapter(this, magoolList, R.color.category_magool);
         ListView listView = findViewById(R.id.list_entity);

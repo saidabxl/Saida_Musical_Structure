@@ -45,17 +45,17 @@ public class SamatarSongs extends AppCompatActivity {
         mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         final List<Entity> samatarList = new ArrayList<>();
-        samatarList.add(new Samatar(R.string.Somali_Song1, R.drawable.samatar, R.raw.number_1));
-        samatarList.add(new Samatar(R.string.Somali_Song2, R.drawable.samatar, R.raw.number_two));
-        samatarList.add(new Samatar(R.string.Somali_Song3, R.drawable.samatar, R.raw.number_three));
-        samatarList.add(new Samatar(R.string.Somali_Song4, R.drawable.samatar, R.raw.number_four));
-        samatarList.add(new Samatar(R.string.Somali_Song5, R.drawable.samatar, R.raw.number_five));
-        samatarList.add(new Samatar(R.string.Somali_Song6, R.drawable.samatar, R.raw.number_six));
-        samatarList.add(new Samatar(R.string.Somali_Song7, R.drawable.samatar, R.raw.number_seven));
-        samatarList.add(new Samatar(R.string.Somali_Song8, R.drawable.samatar, R.raw.number_eight));
-        samatarList.add(new Samatar(R.string.Somali_Song9, R.drawable.samatar, R.raw.number_eight));
-        samatarList.add(new Samatar(R.string.Somali_Song9, R.drawable.samatar, R.raw.number_nine));
-        samatarList.add(new Samatar(R.string.Somali_Song10, R.drawable.samatar, R.raw.number_ten));
+        samatarList.add(new Samatar("Samatar", "Song Name", R.drawable.samatar, R.raw.number_1));
+        samatarList.add(new Samatar("Samatar", "Song Name", R.drawable.samatar, R.raw.number_two));
+        samatarList.add(new Samatar("Samatar", "Song Name", R.drawable.samatar, R.raw.number_three));
+        samatarList.add(new Samatar("Samatar", "Song Name", R.drawable.samatar, R.raw.number_four));
+        samatarList.add(new Samatar("Samatar", "Song Name", R.drawable.samatar, R.raw.number_five));
+        samatarList.add(new Samatar("Samatar", "Song Name", R.drawable.samatar, R.raw.number_six));
+        samatarList.add(new Samatar("Samatar", "Song Name", R.drawable.samatar, R.raw.number_seven));
+        samatarList.add(new Samatar("Samatar", "Song Name", R.drawable.samatar, R.raw.number_eight));
+        samatarList.add(new Samatar("Samatar", "Song Name", R.drawable.samatar, R.raw.number_eight));
+        samatarList.add(new Samatar("Samatar", "Song Name", R.drawable.samatar, R.raw.number_nine));
+        samatarList.add(new Samatar("Samatar", "Song Name", R.drawable.samatar, R.raw.number_ten));
 
         EntityAdapter adaptor = new EntityAdapter(this, samatarList, R.color.category_sahra);
         ListView listView = findViewById(R.id.list_entity);

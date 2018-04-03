@@ -21,6 +21,21 @@
         android:layout_toEndOf="@id/song_cover_image_view"
         android:layout_toRightOf="@id/song_cover_image_view" />
 
+    <TextView
+        android:id="@+id/song_name_text_view2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/song_name_text_view"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/song_cover_image_view"
+        android:layout_toRightOf="@id/song_cover_image_view"
+        android:paddingLeft="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
     <ImageView
         android:layout_width="@dimen/image_list"
         android:layout_height="@dimen/image_list"

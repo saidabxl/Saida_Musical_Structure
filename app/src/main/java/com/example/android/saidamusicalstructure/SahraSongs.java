@@ -45,17 +45,17 @@ public class SahraSongs extends AppCompatActivity {
         mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         final List<Entity> sahraList = new ArrayList<>();
-        sahraList.add(new Sahra(R.string.Somali_Song1, R.drawable.sahra, R.raw.number_1));
-        sahraList.add(new Sahra(R.string.Somali_Song2, R.drawable.sahra, R.raw.number_two));
-        sahraList.add(new Sahra(R.string.Somali_Song3, R.drawable.sahra, R.raw.number_three));
-        sahraList.add(new Sahra(R.string.Somali_Song4, R.drawable.sahra, R.raw.number_four));
-        sahraList.add(new Sahra(R.string.Somali_Song5, R.drawable.sahra, R.raw.number_five));
-        sahraList.add(new Sahra(R.string.Somali_Song6, R.drawable.sahra, R.raw.number_six));
-        sahraList.add(new Sahra(R.string.Somali_Song7, R.drawable.sahra, R.raw.number_seven));
-        sahraList.add(new Sahra(R.string.Somali_Song8, R.drawable.sahra, R.raw.number_eight));
-        sahraList.add(new Sahra(R.string.Somali_Song9, R.drawable.sahra, R.raw.number_eight));
-        sahraList.add(new Sahra(R.string.Somali_Song9, R.drawable.sahra, R.raw.number_nine));
-        sahraList.add(new Sahra(R.string.Somali_Song10, R.drawable.sahra, R.raw.number_ten));
+        sahraList.add(new Sahra("Sahra Ahmed", "Song Name", R.drawable.sahra, R.raw.number_1));
+        sahraList.add(new Sahra("Sahra Ahmed", "Song Name", R.drawable.sahra, R.raw.number_two));
+        sahraList.add(new Sahra("Sahra Ahmed", "Song Name", R.drawable.sahra, R.raw.number_three));
+        sahraList.add(new Sahra("Sahra Ahmed", "Song Name", R.drawable.sahra, R.raw.number_four));
+        sahraList.add(new Sahra("Sahra Ahmed", "Song Name", R.drawable.sahra, R.raw.number_five));
+        sahraList.add(new Sahra("Sahra Ahmed", "Song Name", R.drawable.sahra, R.raw.number_six));
+        sahraList.add(new Sahra("Sahra Ahmed", "Song Name", R.drawable.sahra, R.raw.number_seven));
+        sahraList.add(new Sahra("Sahra Ahmed", "Song Name", R.drawable.sahra, R.raw.number_eight));
+        sahraList.add(new Sahra("Sahra Ahmed", "Song Name", R.drawable.sahra, R.raw.number_eight));
+        sahraList.add(new Sahra("Sahra Ahmed", "Song Name", R.drawable.sahra, R.raw.number_nine));
+        sahraList.add(new Sahra("Sahra Ahmed", "Song Name", R.drawable.sahra, R.raw.number_ten));
 
         EntityAdapter adaptor = new EntityAdapter(this, sahraList, R.color.category_sahra);
         ListView listView = findViewById(R.id.list_entity);

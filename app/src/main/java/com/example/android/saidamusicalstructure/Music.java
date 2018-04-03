@@ -1,8 +1,9 @@
 package com.example.android.saidamusicalstructure;
 
 public class Music extends Entity {
-    public Music(int nameSong, int mSoundId) {
-        super(nameSong, mSoundId);
+    public Music(String nameOfSinger, String nameOfSong, int mSoundId) {
+
+        super(nameOfSinger, nameOfSong, mSoundId);
     }
 }
 
